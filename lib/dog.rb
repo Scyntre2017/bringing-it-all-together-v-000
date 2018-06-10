@@ -38,7 +38,7 @@ class Dog
     SQL
 
     dog_row = DB[:conn].execute(sql, id)[0]
-    self.new_from_db(student_row)
+    self.new_from_db(dog_row)
   end
 
   def save
